@@ -22,9 +22,14 @@ import { TextComponent } from './text/text.component';
     HomeModule,
     UpgradeModule,
   ],
+  entryComponents: [
+    AppComponent,
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(public upgrade: UpgradeModule) {}
+
+  ngDoBootstrap() {}
 }
